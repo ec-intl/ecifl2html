@@ -64,7 +64,7 @@ The htmlwriter's codebase structure is as shown below:
 
 ## Usage
 
-To use htmlwriter you first have your markdown text in the following format:
+To use htmlwriter you first have your Markdown text in the following format:
 
 | Markdown Text | HTML Equivalent |
 |---------------|-------------|
@@ -82,7 +82,7 @@ from src.htmlwriter import htmlwriter as hw
 
 markdown_text = """
 h. Welcome to MarkdownToHTML
-p. Convert markdown-like text into HTML effortlessly.
+p. Convert Markdown-like text into HTML effortlessly.
 
 h2. Features
 #. Supports headers (e.g., h., hh., hhh.)
@@ -102,13 +102,13 @@ html_output = converter.convert()
 print(html_output)
 ```
 
-NB: the `r` in code block section is there for the sake of the markdown, so in your markdown text omit the `r`.
+NB: the `r` in code block section is there for the sake of the Markdown, so in your Markdown text omit the `r`.
 
 The expected HTML output will be:
 
 ```html
 <h1>Welcome to MarkdownToHTML</h1>
-<p>This is a simple tool to convert markdown-like text to HTML.</p>
+<p>This is a simple tool to convert Markdown-like text to HTML.</p>
 
 <h2>Features</h2>
 <ol>
