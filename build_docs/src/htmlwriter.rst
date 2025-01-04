@@ -1,7 +1,7 @@
-ptcolors
+htmlwriter
 ========
 
-.. automodule:: ptcolors
+.. automodule:: htmlwriter
    :members:
    :undoc-members:
    :show-inheritance:

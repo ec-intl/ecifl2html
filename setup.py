@@ -8,7 +8,7 @@ setup(
     name="htmlwriter",
     version=version,
     author="Elizabeth Consulting International Inc.",
-    author_email="info@ec-intl.com",
+    author_email="developers@ec-intl.com",
     description=(
         "A lightweight Python package for adding converting Markdown to HTML."
     ),

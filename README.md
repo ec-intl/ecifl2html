@@ -61,3 +61,69 @@ The htmlwriter's codebase structure is as shown below:
         └── test_htmlwriter.py
 
 ```
+
+## Usage
+
+To use htmlwriter you first have your markdown text in the following format:
+
+| Markdown Text | HTML Equivalent |
+|---------------|-------------|
+| `h.`, `hh.` etc.   | `<h1>`, `<h2>`, ... |
+| `p.`    | `<p>` |
+| `#.`    | `<ol>` |
+| `-.` | `<ul>` |
+| ````...```` | `<pre><code>` |
+| `i.` | `<img>` |
+
+### Example Markdown
+
+```python
+from src.htmlwriter import htmlwriter as hw
+
+markdown_text = """
+h. Welcome to MarkdownToHTML
+p. Convert markdown-like text into HTML effortlessly.
+
+h2. Features
+#. Supports headers (e.g., h., hh., hhh.)
+#. Paragraphs (e.g., p.)
+#. Ordered lists (#.)
+#. Unordered lists (-.)
+#. Code blocks (```...```)
+
+h2. Example
+p. Here's a code block:
+r```
+def example():
+return “Hello, MarkdownToHTML!”
+r```
+converter = ht.MarkdownToHTML(markdown_text)
+html_output = converter.convert()
+print(html_output)
+```
+
+NB: the `r` in code block section is there for the sake of the markdown, so in your markdown text omit the `r`.
+
+The expected HTML output will be:
+
+```html
+<h1>Welcome to MarkdownToHTML</h1>
+<p>This is a simple tool to convert markdown-like text to HTML.</p>
+
+<h2>Features</h2>
+<ol>
+<li>Converts headers (e.g., h1., h2.)</li>
+</ol>
+
+<h2>Example</h2>
+<p>Here's an example of an unordered list:</p>
+<ul>
+<li>Item 1</li>
+</ul>
+
+<p>And a code block:</p>
+<pre><code>
+def example_function():
+return “Hello, World!”
+</code></pre>
+```

@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath("../../src/htmlwriter"))
 
 # -- Project information -----------------------------------------------------
 
-project = "ptcolors"
+project = "htmlwriter"
 copyright = "2025, Elizabeth Consulting International Inc."
 author = "Elizabeth Consulting International Inc."
 
