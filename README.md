@@ -97,6 +97,8 @@ r```
 def example():
 return “Hello, MarkdownToHTML!”
 r```
+"""
+
 converter = ht.MarkdownToHTML(markdown_text)
 html_output = converter.convert()
 print(html_output)
@@ -113,6 +115,10 @@ The expected HTML output will be:
 <h2>Features</h2>
 <ol>
 <li>Converts headers (e.g., h1., h2.)</li>
+<li>Paragraphs (e.g., p.)</li>
+<li>Ordered lists (#.)</li>
+<li>Unordered lists (-.)</li>
+<li>Code blocks (```...```)</li>
 </ol>
 
 <h2>Example</h2>
