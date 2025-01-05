@@ -5,7 +5,7 @@ with open("VERSION", "r", encoding="utf-8") as version_file:
     version = version_file.read().strip()
 
 setup(
-    name="htmlwriter",
+    name="md2tag",
     version=version,
     author="Elizabeth Consulting International Inc.",
     author_email="developers@ec-intl.com",
@@ -14,12 +14,12 @@ setup(
     ),
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/ec-intl/htmlwriter",
+    url="https://github.com/ec-intl/md2tag",
     project_urls={
-        "Homepage": "https://github.com/ec-intl/htmlwriter",
-        "Issues": "https://github.com/ec-intl/htmlwriterissues",
+        "Homepage": "https://github.com/ec-intl/md2tag",
+        "Issues": "https://github.com/ec-intl/md2tagissues",
     },
-    packages=["htmlwriter"],
+    packages=["md2tag"],
     package_dir={"": "src"},
     license="Apache License 2.0",
     classifiers=[

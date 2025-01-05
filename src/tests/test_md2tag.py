@@ -1,8 +1,8 @@
-""" Unit tests for the MarkdownToHTML class in htmlwriter.py """
+""" Unit tests for the MarkdownToHTML class in md2tag.py """
 
 import unittest
 
-from htmlwriter import htmlwriter as hw
+from md2tag import md2tag as hw
 
 
 class TestMarkdownToHTML(unittest.TestCase):

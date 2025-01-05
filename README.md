@@ -1,18 +1,18 @@
-# htmlwriter
+# md2tag
 
-![GitHub license](https://img.shields.io/github/license/ec-intl/htmlwriter)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/ec-intl/htmlwriter)
-![GitHub issues](https://img.shields.io/github/issues/ec-intl/htmlwriter)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/ec-intl/htmlwriter)
-![GitHub contributors](https://img.shields.io/github/contributors/ec-intl/htmlwriter)
-![GitHub last commit](https://img.shields.io/github/last-commit/ec-intl/htmlwriter)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ec-intl/htmlwriter)
-![GitHub top language](https://img.shields.io/github/languages/top/ec-intl/htmlwriter)
-![GitHub search hit counter](https://img.shields.io/github/search/ec-intl/htmlwriter/htmlwriter)
-![GitHub stars](https://img.shields.io/github/stars/ec-intl/htmlwriter)
-![GitHub watchers](https://img.shields.io/github/watchers/ec-intl/htmlwriter)
+![GitHub license](https://img.shields.io/github/license/ec-intl/md2tag)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/ec-intl/md2tag)
+![GitHub issues](https://img.shields.io/github/issues/ec-intl/md2tag)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/ec-intl/md2tag)
+![GitHub contributors](https://img.shields.io/github/contributors/ec-intl/md2tag)
+![GitHub last commit](https://img.shields.io/github/last-commit/ec-intl/md2tag)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ec-intl/md2tag)
+![GitHub top language](https://img.shields.io/github/languages/top/ec-intl/md2tag)
+![GitHub search hit counter](https://img.shields.io/github/search/ec-intl/md2tag/md2tag)
+![GitHub stars](https://img.shields.io/github/stars/ec-intl/md2tag)
+![GitHub watchers](https://img.shields.io/github/watchers/ec-intl/md2tag)
 
-`htmlwriter` is a Python package for converting Markdown text to HTML. It is a simple package that provides a single class, `MarkdownToHTML`, used to convert Markdown text to HTML.
+`md2tag` is a Python package for converting Markdown text to HTML. It is a simple package that provides a single class, `MarkdownToHTML`, used to convert Markdown text to HTML.
 
 ## Project Status
 
@@ -20,15 +20,15 @@ Here's the current status of our workflows:
 
 | Workflow                | Status |
 |-------------------------|--------|
-| Testing Suite  | [![Continuous-Integration](https://github.com/ec-intl/htmlwriter/actions/workflows/ci.yml/badge.svg)](https://github.com/ec-intl/htmlwriter/actions/workflows/ci.yml) |
-| Deployment Suite | [![Continuous-Deployment](https://github.com/ec-intl/htmlwriter/actions/workflows/cd.yml/badge.svg)](https://github.com/ec-intl/htmlwriter/actions/workflows/cd.yml)|
-| Sphinx Documentation           | [![Sphinx-docs](https://github.com/ec-intl/htmlwriter/actions/workflows/docs.yml/badge.svg)](https://github.com/ec-intl/htmlwriter/actions/workflows/docs.yml) |
-| Guard Main Branch       | [![Guard Main Branch](https://github.com/ec-intl/htmlwriter/actions/workflows/guard.yml/badge.svg)](https://github.com/ec-intl/htmlwriter/actions/workflows/guard.yml) |
-| Code Quality Checker    | [![Lint Codebase](https://github.com/ec-intl/htmlwriter/actions/workflows/super-linter.yml/badge.svg)](https://github.com/ec-intl/htmlwriter/actions/workflows/super-linter.yml) |
+| Testing Suite  | [![Continuous-Integration](https://github.com/ec-intl/md2tag/actions/workflows/ci.yml/badge.svg)](https://github.com/ec-intl/md2tag/actions/workflows/ci.yml) |
+| Deployment Suite | [![Continuous-Deployment](https://github.com/ec-intl/md2tag/actions/workflows/cd.yml/badge.svg)](https://github.com/ec-intl/md2tag/actions/workflows/cd.yml)|
+| Sphinx Documentation           | [![Sphinx-docs](https://github.com/ec-intl/md2tag/actions/workflows/docs.yml/badge.svg)](https://github.com/ec-intl/md2tag/actions/workflows/docs.yml) |
+| Guard Main Branch       | [![Guard Main Branch](https://github.com/ec-intl/md2tag/actions/workflows/guard.yml/badge.svg)](https://github.com/ec-intl/md2tag/actions/workflows/guard.yml) |
+| Code Quality Checker    | [![Lint Codebase](https://github.com/ec-intl/md2tag/actions/workflows/super-linter.yml/badge.svg)](https://github.com/ec-intl/md2tag/actions/workflows/super-linter.yml) |
 
 ## Components
 
-The htmlwriter's codebase structure is as shown below:
+The md2tag's codebase structure is as shown below:
 
 ```plaintext
 .
@@ -43,7 +43,7 @@ The htmlwriter's codebase structure is as shown below:
 │   └── src
 │       ├── __init__.py
 │       ├── conf.py
-│       ├── htmlwriter.rst
+│       ├── md2tag.rst
 │       └── index.rst
 ├── requirements
 │   ├── production.txt
@@ -52,19 +52,19 @@ The htmlwriter's codebase structure is as shown below:
 ├── requirements.txt
 ├── setup.py
 └── src
-    ├── htmlwriter
+    ├── md2tag
     │   ├── __init__.py
-    │   └── htmlwriter.py
+    │   └── md2tag.py
     └── tests
         ├── __init__.py
         │   ├── __init__.cpython-311.pyc
-        └── test_htmlwriter.py
+        └── test_md2tag.py
 
 ```
 
 ## Usage
 
-To use htmlwriter you first have your Markdown text in the following format:
+To use md2tag you first have your Markdown text in the following format:
 
 | Markdown Text | HTML Equivalent |
 |---------------|-------------|
@@ -78,7 +78,7 @@ To use htmlwriter you first have your Markdown text in the following format:
 ### Example Markdown
 
 ```python
-from src.htmlwriter import htmlwriter as hw
+from src.md2tag import md2tag as hw
 
 markdown_text = """
 h. Welcome to MarkdownToHTML

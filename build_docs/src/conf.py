@@ -1,7 +1,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../../src/htmlwriter"))
+sys.path.insert(0, os.path.abspath("../../src/md2tag"))
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath("../../src/htmlwriter"))
 
 # -- Project information -----------------------------------------------------
 
-project = "htmlwriter"
+project = "md2tag"
 copyright = "2025, Elizabeth Consulting International Inc."
 author = "Elizabeth Consulting International Inc."
 
