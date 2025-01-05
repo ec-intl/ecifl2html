@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>htmlwriter &#8212; htmlwriter 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/cloud.css?v=f9ae72be" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+
+    
+    
+     
+        <script src="_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="htmlwriter" href="htmlwriter.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="htmlwriter.html" title="htmlwriter"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+    <li><a href="#">htmlwriter 0.0.1 documentation</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">htmlwriter</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="htmlwriter">
+<h1>htmlwriter<a class="headerlink" href="#htmlwriter" title="Link to this heading">¶</a></h1>
+<p><strong>htmlwriter</strong> is a Python package for converting Markdown text to HTML. It is a simple package that provides a single class, <cite>MarkdownToHTML</cite>, used to convert Markdown text to HTML.</p>
+<p>Below, you can find more information on the MarkdownToHTML class source code.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">API Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="htmlwriter.html">htmlwriter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="htmlwriter.html#htmlwriter.MarkdownToHTML"><code class="docutils literal notranslate"><span class="pre">MarkdownToHTML</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+<p>## Usage</p>
+<p>To use htmlwriter you first have your markdown text in the following format:</p>
+<p>### Example Markdown</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">src.htmlwriter</span> <span class="kn">import</span> <span class="n">htmlwriter</span> <span class="k">as</span> <span class="n">hw</span>
+
+<span class="n">markdown_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">h. Welcome to MarkdownToHTML</span>
+<span class="s2">p. Convert Markdown-like text into HTML effortlessly.</span>
+
+<span class="s2">h2. Features</span>
+<span class="s2">#. Supports headers (e.g., h., hh., hhh.)</span>
+<span class="s2">#. Paragraphs (e.g., p.)</span>
+<span class="s2">#. Ordered lists (#.)</span>
+<span class="s2">#. Unordered lists (-.)</span>
+<span class="s2">#. Code blocks (```...```)</span>
+
+<span class="s2">h2. Example</span>
+<span class="s2">p. Here&#39;s a code block:</span>
+<span class="s2">r```</span>
+<span class="s2">def example():</span>
+<span class="s2">return “Hello, MarkdownToHTML!”</span>
+<span class="s2">r```</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">converter</span> <span class="o">=</span> <span class="n">ht</span><span class="o">.</span><span class="n">MarkdownToHTML</span><span class="p">(</span><span class="n">markdown_text</span><span class="p">)</span>
+<span class="n">html_output</span> <span class="o">=</span> <span class="n">converter</span><span class="o">.</span><span class="n">convert</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">html_output</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>NB: the <cite>r</cite> in code block section is there for the sake of the Markdown, so in your Markdown text omit the <cite>r</cite>.</p>
+<p>The expected HTML output will be:</p>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="#">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">htmlwriter</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="htmlwriter.html"
+                          title="Next page">&rarr; htmlwriter</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="htmlwriter.html" title="htmlwriter"
+             >next</a> &nbsp; &nbsp;</li>
+    <li><a href="#">htmlwriter 0.0.1 documentation</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">htmlwriter</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, Elizabeth Consulting International Inc..
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>
