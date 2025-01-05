@@ -37,14 +37,12 @@ The md2tag's codebase structure is as shown below:
 ├── README.md
 ├── VERSION
 ├── build_docs
-│   ├── Makefile
 │   ├── __init__.py
-│   ├── make.bat
 │   └── src
 │       ├── __init__.py
 │       ├── conf.py
-│       ├── md2tag.rst
-│       └── index.rst
+│       ├── index.rst
+│       └── md2tag.rst
 ├── requirements
 │   ├── production.txt
 │   ├── staging.txt
@@ -57,8 +55,8 @@ The md2tag's codebase structure is as shown below:
     │   └── md2tag.py
     └── tests
         ├── __init__.py
-        │   ├── __init__.cpython-311.pyc
         └── test_md2tag.py
+
 ```
 
 ## Usage

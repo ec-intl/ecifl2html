@@ -17,7 +17,7 @@ setup(
     url="https://github.com/ec-intl/md2tag",
     project_urls={
         "Homepage": "https://github.com/ec-intl/md2tag",
-        "Issues": "https://github.com/ec-intl/md2tagissues",
+        "Issues": "https://github.com/ec-intl/md2tag/issues",
     },
     packages=["md2tag"],
     package_dir={"": "src"},
