@@ -59,7 +59,6 @@ The md2tag's codebase structure is as shown below:
         ├── __init__.py
         │   ├── __init__.cpython-311.pyc
         └── test_md2tag.py
-
 ```
 
 ## Usage
