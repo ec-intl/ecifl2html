@@ -1,7 +1,7 @@
-htmlwriter
+ecifl2html
 ========
 
-.. automodule:: htmlwriter
+.. automodule:: ecifl2html
    :members:
    :undoc-members:
    :show-inheritance:
