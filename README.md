@@ -1,18 +1,18 @@
-# md2tag
+# ecifl2html
 
-![GitHub license](https://img.shields.io/github/license/ec-intl/md2tag)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/ec-intl/md2tag)
-![GitHub issues](https://img.shields.io/github/issues/ec-intl/md2tag)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/ec-intl/md2tag)
-![GitHub contributors](https://img.shields.io/github/contributors/ec-intl/md2tag)
-![GitHub last commit](https://img.shields.io/github/last-commit/ec-intl/md2tag)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ec-intl/md2tag)
-![GitHub top language](https://img.shields.io/github/languages/top/ec-intl/md2tag)
-![GitHub search hit counter](https://img.shields.io/github/search/ec-intl/md2tag/md2tag)
-![GitHub stars](https://img.shields.io/github/stars/ec-intl/md2tag)
-![GitHub watchers](https://img.shields.io/github/watchers/ec-intl/md2tag)
+![GitHub license](https://img.shields.io/github/license/ec-intl/ecifl2html)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/ec-intl/ecifl2html)
+![GitHub issues](https://img.shields.io/github/issues/ec-intl/ecifl2html)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/ec-intl/ecifl2html)
+![GitHub contributors](https://img.shields.io/github/contributors/ec-intl/ecifl2html)
+![GitHub last commit](https://img.shields.io/github/last-commit/ec-intl/ecifl2html)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/ec-intl/ecifl2html)
+![GitHub top language](https://img.shields.io/github/languages/top/ec-intl/ecifl2html)
+![GitHub search hit counter](https://img.shields.io/github/search/ec-intl/ecifl2html/ecifl2html)
+![GitHub stars](https://img.shields.io/github/stars/ec-intl/ecifl2html)
+![GitHub watchers](https://img.shields.io/github/watchers/ec-intl/ecifl2html)
 
-`md2tag` is a Python package for converting Markdown text to HTML. It is a simple package that provides a single class, `MarkdownToHTML`, used to convert Markdown text to HTML.
+`ecifl2html` is a Python package for converting Markdown text to HTML. It is a simple package that provides a single class, `MarkdownToHTML`, used to convert Markdown text to HTML.
 
 ## Project Status
 
@@ -20,15 +20,15 @@ Here's the current status of our workflows:
 
 | Workflow                | Status |
 |-------------------------|--------|
-| Testing Suite  | [![Continuous-Integration](https://github.com/ec-intl/md2tag/actions/workflows/ci.yml/badge.svg)](https://github.com/ec-intl/md2tag/actions/workflows/ci.yml) |
-| Deployment Suite | [![Continuous-Deployment](https://github.com/ec-intl/md2tag/actions/workflows/cd.yml/badge.svg)](https://github.com/ec-intl/md2tag/actions/workflows/cd.yml)|
-| Sphinx Documentation           | [![Sphinx-docs](https://github.com/ec-intl/md2tag/actions/workflows/docs.yml/badge.svg)](https://github.com/ec-intl/md2tag/actions/workflows/docs.yml) |
-| Guard Main Branch       | [![Guard Main Branch](https://github.com/ec-intl/md2tag/actions/workflows/guard.yml/badge.svg)](https://github.com/ec-intl/md2tag/actions/workflows/guard.yml) |
-| Code Quality Checker    | [![Lint Codebase](https://github.com/ec-intl/md2tag/actions/workflows/super-linter.yml/badge.svg)](https://github.com/ec-intl/md2tag/actions/workflows/super-linter.yml) |
+| Testing Suite  | [![Continuous-Integration](https://github.com/ec-intl/ecifl2html/actions/workflows/ci.yml/badge.svg)](https://github.com/ec-intl/ecifl2html/actions/workflows/ci.yml) |
+| Deployment Suite | [![Continuous-Deployment](https://github.com/ec-intl/ecifl2html/actions/workflows/cd.yml/badge.svg)](https://github.com/ec-intl/ecifl2html/actions/workflows/cd.yml)|
+| Sphinx Documentation           | [![Sphinx-docs](https://github.com/ec-intl/ecifl2html/actions/workflows/docs.yml/badge.svg)](https://github.com/ec-intl/ecifl2html/actions/workflows/docs.yml) |
+| Guard Main Branch       | [![Guard Main Branch](https://github.com/ec-intl/ecifl2html/actions/workflows/guard.yml/badge.svg)](https://github.com/ec-intl/ecifl2html/actions/workflows/guard.yml) |
+| Code Quality Checker    | [![Lint Codebase](https://github.com/ec-intl/ecifl2html/actions/workflows/super-linter.yml/badge.svg)](https://github.com/ec-intl/ecifl2html/actions/workflows/super-linter.yml) |
 
 ## Components
 
-The md2tag's codebase structure is as shown below:
+The ecifl2html's codebase structure is as shown below:
 
 ```plaintext
 .
@@ -42,7 +42,7 @@ The md2tag's codebase structure is as shown below:
 │       ├── __init__.py
 │       ├── conf.py
 │       ├── index.rst
-│       └── md2tag.rst
+│       └── ecifl2html.rst
 ├── requirements
 │   ├── production.txt
 │   ├── staging.txt
@@ -50,18 +50,18 @@ The md2tag's codebase structure is as shown below:
 ├── requirements.txt
 ├── setup.py
 └── src
-    ├── md2tag
+    ├── ecifl2html
     │   ├── __init__.py
-    │   └── md2tag.py
+    │   └── ecifl2html.py
     └── tests
         ├── __init__.py
-        └── test_md2tag.py
+        └── test_ecifl2html.py
 
 ```
 
 ## Usage
 
-To use md2tag you first have your Markdown text in the following format:
+To use ecifl2html you first have your Markdown text in the following format:
 
 | Markdown Text | HTML Equivalent |
 |---------------|-------------|
@@ -75,7 +75,7 @@ To use md2tag you first have your Markdown text in the following format:
 ### Example Markdown
 
 ```python
-from src.md2tag import md2tag as hw
+from src.ecifl2html import ecifl2html as hw
 
 markdown_text = """
 h. Welcome to MarkdownToHTML

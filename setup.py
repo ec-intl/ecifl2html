@@ -5,7 +5,7 @@ with open("VERSION", "r", encoding="utf-8") as version_file:
     version = version_file.read().strip()
 
 setup(
-    name="md2tag",
+    name="ecifl2html",
     version=version,
     author="Elizabeth Consulting International Inc.",
     author_email="developers@ec-intl.com",
@@ -14,12 +14,12 @@ setup(
     ),
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/ec-intl/md2tag",
+    url="https://github.com/ec-intl/ecifl2html",
     project_urls={
-        "Homepage": "https://github.com/ec-intl/md2tag",
-        "Issues": "https://github.com/ec-intl/md2tag/issues",
+        "Homepage": "https://github.com/ec-intl/ecifl2html",
+        "Issues": "https://github.com/ec-intl/ecifl2html/issues",
     },
-    packages=["md2tag"],
+    packages=["ecifl2html"],
     package_dir={"": "src"},
     license="Apache License 2.0",
     classifiers=[

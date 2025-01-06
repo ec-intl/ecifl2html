@@ -1,7 +1,7 @@
-md2tag
+ecifl2html
 ========
 
-.. automodule:: md2tag
+.. automodule:: ecifl2html
    :members:
    :undoc-members:
    :show-inheritance:
