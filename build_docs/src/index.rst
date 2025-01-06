@@ -60,7 +60,7 @@ To use ecifl2html you first have your formatted text in the following format:
     r```
     """
 
-    converter = ht.FormattedTextToHTML(markdown_text)
+    converter = ht.FormattedTextToHTML(formatted_text)
     html_output = converter.convert()
     print(html_output)
 
