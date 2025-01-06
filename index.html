@@ -7,8 +7,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>htmlwriter &#8212; htmlwriter 0.0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <title>ecifl2html &#8212; ecifl2html 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/cloud.css?v=f9ae72be" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
     
@@ -34,7 +34,7 @@
 
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="htmlwriter" href="htmlwriter.html" /> 
+    <link rel="next" title="ecifl2html" href="ecifl2html.html" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
   </head><body>
     <div class="relbar-top">
@@ -49,11 +49,11 @@
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> &nbsp; &nbsp;</li>
         <li class="right" >
-          <a href="htmlwriter.html" title="htmlwriter"
+          <a href="ecifl2html.html" title="ecifl2html"
              accesskey="N">next</a> &nbsp; &nbsp;</li>
-    <li><a href="#">htmlwriter 0.0.1 documentation</a> &#187;</li>
+    <li><a href="#">ecifl2html 0.0.1 documentation</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">htmlwriter</a></li> 
+        <li class="nav-item nav-item-this"><a href="">ecifl2html</a></li> 
       </ul>
     </div>
     </div>
@@ -64,15 +64,15 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="htmlwriter">
-<h1>htmlwriter<a class="headerlink" href="#htmlwriter" title="Link to this heading">¶</a></h1>
-<p><strong>htmlwriter</strong> is a Python package for converting Markdown text to HTML. It is a simple package that provides a single class, <cite>MarkdownToHTML</cite>, used to convert Markdown text to HTML.</p>
-<p>Below, you can find more information on the MarkdownToHTML class source code.</p>
+  <section id="ecifl2html">
+<h1>ecifl2html<a class="headerlink" href="#ecifl2html" title="Link to this heading">¶</a></h1>
+<p><strong>ecifl2html</strong> is a Python package for converting formatted text to HTML. It is a simple package that provides a single class, <cite>FormattedTextToHTML</cite>, used to convert formatted text to HTML.</p>
+<p>Below, you can find more information on the FormattedTextToHTML class source code.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">API Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="htmlwriter.html">htmlwriter</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="htmlwriter.html#htmlwriter.MarkdownToHTML"><code class="docutils literal notranslate"><span class="pre">MarkdownToHTML</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="ecifl2html.html">ecifl2html</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ecifl2html.html#ecifl2html.FormattedTextToHTML"><code class="docutils literal notranslate"><span class="pre">FormattedTextToHTML</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -80,13 +80,13 @@
 <section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
 <p>## Usage</p>
-<p>To use htmlwriter you first have your markdown text in the following format:</p>
-<p>### Example Markdown</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">src.htmlwriter</span> <span class="kn">import</span> <span class="n">htmlwriter</span> <span class="k">as</span> <span class="n">hw</span>
+<p>To use ecifl2html you first have your formatted text in the following format:</p>
+<p>### Example Formatted Text</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">src.ecifl2html</span><span class="w"> </span><span class="kn">import</span> <span class="n">ecifl2html</span> <span class="k">as</span> <span class="n">hw</span>
 
-<span class="n">markdown_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">h. Welcome to MarkdownToHTML</span>
-<span class="s2">p. Convert Markdown-like text into HTML effortlessly.</span>
+<span class="n">formatted_text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">h. Welcome to FormattedTextToHTML</span>
+<span class="s2">p. Convert formatted text into HTML effortlessly.</span>
 
 <span class="s2">h2. Features</span>
 <span class="s2">#. Supports headers (e.g., h., hh., hhh.)</span>
@@ -99,16 +99,16 @@
 <span class="s2">p. Here&#39;s a code block:</span>
 <span class="s2">r```</span>
 <span class="s2">def example():</span>
-<span class="s2">return “Hello, MarkdownToHTML!”</span>
+<span class="s2">return “Hello, FormattedTextToHTML!”</span>
 <span class="s2">r```</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
-<span class="n">converter</span> <span class="o">=</span> <span class="n">ht</span><span class="o">.</span><span class="n">MarkdownToHTML</span><span class="p">(</span><span class="n">markdown_text</span><span class="p">)</span>
+<span class="n">converter</span> <span class="o">=</span> <span class="n">ht</span><span class="o">.</span><span class="n">FormattedTextToHTML</span><span class="p">(</span><span class="n">formatted_text</span><span class="p">)</span>
 <span class="n">html_output</span> <span class="o">=</span> <span class="n">converter</span><span class="o">.</span><span class="n">convert</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">html_output</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>NB: the <cite>r</cite> in code block section is there for the sake of the Markdown, so in your Markdown text omit the <cite>r</cite>.</p>
+<p>NB: the <cite>r</cite> in code block section is there for the sake of the formatted text, so in your formatted text omit the <cite>r</cite>.</p>
 <p>The expected HTML output will be:</p>
 </section>
 </section>
@@ -130,7 +130,7 @@
         <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
     <h3><a href="#">Page contents</a></h3>
     <ul>
-<li><a class="reference internal" href="#">htmlwriter</a><ul>
+<li><a class="reference internal" href="#">ecifl2html</a><ul>
 <li><a class="reference internal" href="#usage">Usage</a></li>
 </ul>
 </li>
@@ -140,8 +140,8 @@
   </div>
   <div class="sphinxnext">
     <h4>Next page</h4>
-    <p class="topless"><a href="htmlwriter.html"
-                          title="Next page">&rarr; htmlwriter</a></p>
+    <p class="topless"><a href="ecifl2html.html"
+                          title="Next page">&rarr; ecifl2html</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
@@ -193,11 +193,11 @@
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> &nbsp; &nbsp;</li>
         <li class="right" >
-          <a href="htmlwriter.html" title="htmlwriter"
+          <a href="ecifl2html.html" title="ecifl2html"
              >next</a> &nbsp; &nbsp;</li>
-    <li><a href="#">htmlwriter 0.0.1 documentation</a> &#187;</li>
+    <li><a href="#">ecifl2html 0.0.1 documentation</a> &#187;</li>
 
-        <li class="nav-item nav-item-this"><a href="">htmlwriter</a></li> 
+        <li class="nav-item nav-item-this"><a href="">ecifl2html</a></li> 
       </ul>
     </div>
     </div>
