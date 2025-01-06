@@ -3,14 +3,14 @@
 import re
 
 
-class MarkdownToHTML:
-    """Class to convert markdown-like text to HTML."""
+class FormattedTextToHTML:
+    """Class to convert formatted text to HTML."""
 
     def __init__(self, text: str):
         """
-        Initialize the MarkdownToHTML class with the provided text.
+        Initialize the FormattedTextToHTML class with the provided text.
 
-        :param str text: The markdown-like text to be converted.
+        :param str text: The formatted text to be converted.
         """
         self.text = text
 
@@ -40,7 +40,7 @@ class MarkdownToHTML:
 
     def convert(self) -> str:
         """
-        Convert the markdown-like text to HTML.
+        Convert the formatted text to HTML.
 
         :return: The converted HTML string.
         :rtype: str

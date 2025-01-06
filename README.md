@@ -1,4 +1,4 @@
-# ecifl2html
+# ecifl2HTML
 
 ![GitHub license](https://img.shields.io/github/license/ec-intl/ecifl2html)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ec-intl/ecifl2html)
@@ -12,7 +12,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/ec-intl/ecifl2html)
 ![GitHub watchers](https://img.shields.io/github/watchers/ec-intl/ecifl2html)
 
-`ecifl2html` is a Python package for converting Markdown text to HTML. It is a simple package that provides a single class, `MarkdownToHTML`, used to convert Markdown text to HTML.
+`ecifl2html` is a Python package for converting formatted text to HTML. It is a simple package that provides a single class, `FormattedTextToHTML`, used to convert formatted text to HTML.
 
 ## Project Status
 
@@ -28,7 +28,7 @@ Here's the current status of our workflows:
 
 ## Components
 
-The ecifl2html's codebase structure is as shown below:
+The ecifl2HTML's codebase structure is as shown below:
 
 ```plaintext
 .
@@ -61,7 +61,7 @@ The ecifl2html's codebase structure is as shown below:
 
 ## Usage
 
-To use ecifl2html you first have your Markdown text in the following format:
+To use ecifl2HTML you first have your Markdown text in the following format:
 
 | Markdown Text | HTML Equivalent |
 |---------------|-------------|

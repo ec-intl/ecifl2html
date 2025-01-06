@@ -2,9 +2,9 @@ ecifl2html
 ==========
 
 
-**ecifl2html** is a Python package for converting Markdown text to HTML. It is a simple package that provides a single class, `MarkdownToHTML`, used to convert Markdown text to HTML.
+**ecifl2html** is a Python package for converting formatted text to HTML. It is a simple package that provides a single class, `FormattedTextToHTML`, used to convert formatted text to HTML.
 
-Below, you can find more information on the MarkdownToHTML class source code.
+Below, you can find more information on the FormattedTextToHTML class source code.
 
 .. toctree::
    :maxdepth: 2
@@ -17,10 +17,10 @@ Usage
 -----
 ## Usage
 
-To use ecifl2html you first have your markdown text in the following format:
+To use ecifl2html you first have your formatted text in the following format:
 
 +-------------------+-------------------------+
-| Markdown Text     | HTML Equivalent         |
+| Formatted Text     | HTML Equivalent         |
 +===================+=========================+
 | `h.`, `hh.`, etc. | `<h1>`, `<h2>`, ...     |
 +-------------------+-------------------------+
@@ -35,15 +35,15 @@ To use ecifl2html you first have your markdown text in the following format:
 | `i.`              | `<img>`                |
 +-------------------+-------------------------+
 
-### Example Markdown
+### Example Formatted Text
 
 .. code-block:: python
 
     from src.ecifl2html import ecifl2html as hw
 
-    markdown_text = """
-    h. Welcome to MarkdownToHTML
-    p. Convert Markdown-like text into HTML effortlessly.
+    formatted_text = """
+    h. Welcome to FormattedTextToHTML
+    p. Convert formatted text into HTML effortlessly.
 
     h2. Features
     #. Supports headers (e.g., h., hh., hhh.)
@@ -56,22 +56,22 @@ To use ecifl2html you first have your markdown text in the following format:
     p. Here's a code block:
     r```
     def example():
-    return “Hello, MarkdownToHTML!”
+    return “Hello, FormattedTextToHTML!”
     r```
     """
 
-    converter = ht.MarkdownToHTML(markdown_text)
+    converter = ht.FormattedTextToHTML(markdown_text)
     html_output = converter.convert()
     print(html_output)
 
     
-NB: the `r` in code block section is there for the sake of the Markdown, so in your Markdown text omit the `r`.
+NB: the `r` in code block section is there for the sake of the formatted text, so in your formatted text omit the `r`.
 
 The expected HTML output will be:
 
 .. code-block:: HTML
-    <h1>Welcome to MarkdownToHTML</h1>
-    <p>Convert Markdown-like text into HTML effortlessly.</p>
+    <h1>Welcome to FormattedTextToHTML</h1>
+    <p>Convert formatted text into HTML effortlessly.</p>
 
     <h2>Features</h2>
     <ol>
@@ -86,7 +86,7 @@ The expected HTML output will be:
     <p>Here's a code block:</p>
     <pre><code>
     def example():
-        return "Hello, MarkdownToHTML!"
+        return "Hello, FormattedTextToHTML!"
     </code></pre>
 
 Indices and tables
