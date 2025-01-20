@@ -81,14 +81,14 @@ formatted_text = """
     h. Welcome to FormattedTextToHTML
     p. Convert formatted text into HTML effortlessly.
 
-    h2. Features
+    hh. Features
     #. Supports headers (e.g., h., hh., hhh.)
     #. Paragraphs (e.g., p.)
     #. Ordered lists (#.)
     #. Unordered lists (-.)
     #. Code blocks (```...```)
 
-    h2. Example
+    hh. Example
     p. Here's a code block:
     r```
     def example():
