@@ -23,12 +23,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: "3.13"
 
       - name: Install dependencies
         run: |
@@ -47,10 +47,27 @@ jobs:
           echo "📦 Installing Python dependencies."
           python -m pip install --upgrade pip
           if [ -f requirements/staging.txt ]; then
-            pip install -r requirements/staging.txt;
+            pip install -r requirements/staging.txt
           fi
-          python -m pip install --upgrade build
+
+          echo "🧹 Cleaning old build artifacts."
+          rm -rf build dist *.egg-info src/*.egg-info || true
+
+          echo "🔍 Checking metadata source files."
+          ls -l VERSION README.md
+          echo "VERSION contents:"
+          cat VERSION
+
+          echo "🛠️ Installing build tools."
+          python -m pip install --upgrade build twine
+
+          echo "🏗️ Building package."
           python -m build
+
+          echo "✅ Checking distributions."
+          python -m twine check dist/*
+
+          echo "🚀 Uploading to Test PyPI."
           python -m twine upload --repository testpypi dist/*
 
       - name: Done
