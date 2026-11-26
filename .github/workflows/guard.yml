@@ -25,7 +25,7 @@
           - name: Check out repository code
             uses: actions/checkout@v7
           - name: Guard the main branch
-            if: ${{ github.event_name == 'pull_request' && github.head_ref != 'staging' }}
+            if: ${{ github.event_name == 'pull_request' && (github.head_ref != 'staging' || github.event.pull_request.head.repo.full_name != github.repository) }}
             run: |
               echo "🚫 The main branch is protected."
               echo "🚫 Pull requests to main must come from staging branch."
